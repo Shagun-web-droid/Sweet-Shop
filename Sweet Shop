@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color:rgb(252, 221, 226);
+            background-image:url("https://i.pinimg.com/736x/0a/66/72/0a66722f28c123f14164651cd8a6763d.jpg");
+            background-size: cover;
+        }
+
+        header {
+            background-color:rgb(247, 247, 127);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image:url("https://i.pinimg.com/736x/0a/66/72/0a66722f28c123f14164651cd8a6763d.jpg");
+            background-size: cover;
+        }
+
+        header .logo h1 {
+            color:rgb(253, 250, 250);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .cart button {
+            background-color: #9ef8e4;
+            color: hsl(0, 100%, 2%);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cart button:hover {
+            background-color:rgb(240, 201, 151);
+        }
+
+        .intro {
+            background-color:rgb(174, 251, 122);
+            padding: 50px 20px;
+            text-align: center;
+            background-image: url("https://img.freepik.com/premium-vector/vector-blue-confetti-sprinkles-pattern-background_940471-756.jpg?semt=ais_hybrid&w=740&q=80");
+            background-size: cover;
+        
+        }
+
+        .shop {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color:rgb(248, 214, 241);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            background-image: url("https://img.freepik.com/premium-vector/vector-blue-confetti-sprinkles-pattern-background_940471-756.jpg?semt=ais_hybrid&w=740&q=80");
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        button.add-to-cart {
+            background-color: #287ba7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button.add-to-cart:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color:rgb(253, 178, 254);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header><hr>
+        <div class="logo">
+            <h1>SHAGUN SWEETS</h1>
+        </div>
+        <nav>
+            <ul><hr>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <button id="cart-btn">Cart (0)</button>
+        </div>
+    </header>
+
+    <section id="home" class="intro">
+        <h2>Welcome to the SHAGUN SWEETS</h2>
+        <p>Sab khushiyo ki shuruwat mithai k sath</p>
+    </section>
+
+    <section id="shop" class="shop">
+        <h2>Our Sweets</h2>
+        <div class="products">
+            <div class="product" data-name="Motichoor k Laddu" data-price="500/kg">
+                <img src="c:\Users\Aman\OneDrive\laddoo.jpg" alt="ladoo" height="500">
+                <h3>Motichoor k Laddoo</h3>
+                <p>Rs.500/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Kaju katli" data-price="800/kg">
+                <img src="c:\Users\Aman\OneDrive\kaju.jpeg" alt="Kaju Katli" height="500">
+                <h3>Kaju Katli</h3>
+                <p>Rs.800/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Milkcake" data-price="3">
+                <img src="c:\Users\Aman\OneDrive\milkcake.webp" alt="Milkcake" height="500">
+                <h3>Milkcake</h3>
+                <p>Rs.600/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product" data-name="Barfi" data-price="400/kg">
+                <img src="c:\Users\Aman\OneDrive\brfi.webp" alt="Barfi" height="500">
+                <h3>Barfi</h3>
+                <p>Rs.400/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Gulab Jamun" data-price="350/kg">
+                <img src="c:\Users\Aman\OneDrive\gj.webp" alt="Gulab Jmaun" height="500">
+                <h3>Gulab Jamun</h3>
+                <p>Rs.350/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="kheer" data-price="50/pb">
+                <img src="c:\Users\Aman\OneDrive\kheer.webp" alt="kheer" height="500">
+                <h3>kheer</h3>
+                <p>Rs.50/pb</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer><hr>
+        <p>&copy; 2025 Sweet Shop | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const cartBtn = document.getElementById('cart-btn');
+        const addToCartBtns = document.querySelectorAll('.add-to-cart');
+        let cartCount = 0;
+
+        addToCartBtns.forEach(button => {
+            button.addEventListener('click', (event) => {
+                cartCount++;
+                cartBtn.textContent = `Cart (${cartCount})`;
+                alert('Added to Cart!');
+            });
+        });
+    </script>
+</body>
+</html>
